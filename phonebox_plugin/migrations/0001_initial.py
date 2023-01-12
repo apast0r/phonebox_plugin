@@ -10,12 +10,7 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-        ('dcim', '0122_standardize_name_length'),
-        ('extras', '0053_rename_webhook_obj_type'),
-        ('circuits', '0024_standardize_name_length'),
-        ('tenancy', '0011_standardize_name_length'),
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
