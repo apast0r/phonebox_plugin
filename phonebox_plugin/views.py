@@ -1,16 +1,10 @@
 #!./venv/bin/python
 
-from nautobot.extras.views import generic
+from nautobot.core.views import generic
 from .models import Number, VoiceCircuit
 from . import filters
 from . import forms
 from . import tables
-
-from django.conf import settings
-from packaging import version
-
-
-NETBOX_CURRENT_VERSION = version.parse(settings.VERSION)
 
 
 class NumberListView(generic.ObjectListView):
