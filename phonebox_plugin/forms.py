@@ -8,8 +8,8 @@ from nautobot.dcim.models import Region, Site, Device, Interface
 from nautobot.virtualization.models import VirtualMachine, VMInterface
 from nautobot.circuits.models import Provider
 from nautobot.extras.models import Tag
-from .models import Number, VoiceCircuit
-from .choices import VoiceCircuitTypeChoices
+from phonebox_plugin.models import Number, VoiceCircuit
+from phonebox_plugin.choices import VoiceCircuitTypeChoices
 
 
 class AddRemoveTagsForm(forms.Form):

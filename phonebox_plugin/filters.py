@@ -3,9 +3,9 @@ from django.db.models import Q
 from nautobot.circuits.models import Provider
 from nautobot.dcim.models import Region, Site
 from nautobot.tenancy.models import Tenant
-from .models import Number, VoiceCircuit
 from nautobot.utilities.filters import BaseFilterSet
 from nautobot.utilities.filters import TagFilter
+from phonebox_plugin.models import Number, VoiceCircuit
 
 
 class NumberFilterSet(BaseFilterSet):

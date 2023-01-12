@@ -1,5 +1,5 @@
 import django_tables2 as tables
-from .models import Number, VoiceCircuit
+from phonebox_plugin.models import Number, VoiceCircuit
 from nautobot.utilities.tables import BaseTable, ToggleColumn
 
 

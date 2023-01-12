@@ -7,7 +7,7 @@ from nautobot.utilities.querysets import RestrictedQuerySet
 from django.core.validators import RegexValidator
 from taggit.managers import TaggableManager
 from django.urls import reverse
-from .choices import VoiceCircuitTypeChoices, VOICE_CIRCUIT_ASSIGNMENT_MODELS
+from phonebox_plugin.choices import VoiceCircuitTypeChoices, VOICE_CIRCUIT_ASSIGNMENT_MODELS
 
 number_validator = RegexValidator(
     r"^\+?[0-9A-D\#\*]*$",

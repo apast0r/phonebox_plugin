@@ -2,9 +2,7 @@
 
 from nautobot.core.views import generic
 from .models import Number, VoiceCircuit
-from . import filters
-from . import forms
-from . import tables
+from phonebox_plugin import filters, forms, tables
 
 
 class NumberListView(generic.ObjectListView):

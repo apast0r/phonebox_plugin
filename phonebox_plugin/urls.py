@@ -1,6 +1,5 @@
 from django.urls import path
-from . import views
-
+from phonebox_plugin import views
 
 urlpatterns = [
     path("", views.NumberListView.as_view(), name="list_view"),

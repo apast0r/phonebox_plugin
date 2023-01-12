@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Number
+from phonebox_plugin.models import Number
 
 
 @admin.register(Number)
