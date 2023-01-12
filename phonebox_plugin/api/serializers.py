@@ -1,12 +1,11 @@
 from rest_framework import serializers
-from rest_framework.validators import UniqueTogetherValidator
 from ..models import Number
-from tenancy.api.nested_serializers import NestedTenantSerializer
-from dcim.api.nested_serializers import NestedRegionSerializer
-from circuits.api.nested_serializers import NestedProviderSerializer
-from extras.api.serializers import TagSerializer
+from nautobot.tenancy.api.nested_serializers import NestedTenantSerializer
+from nautobot.dcim.api.nested_serializers import NestedRegionSerializer
+from nautobot.circuits.api.nested_serializers import NestedProviderSerializer
+from nautobot.extras.api.serializers import TagSerializer
 from .nested_serializers import NestedNumberSerializer
-from extras.api.nested_serializers import NestedTagSerializer
+from nautobot.extras.api.nested_serializers import NestedTagSerializer
 
 
 class NumberSerializer(TagSerializer, serializers.ModelSerializer):

@@ -1,4 +1,4 @@
-from extras.plugins import PluginMenuItem
+from nautobot.extras.plugins import PluginMenuItem
 
 menu_items = (
     PluginMenuItem(

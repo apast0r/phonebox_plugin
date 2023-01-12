@@ -1,4 +1,4 @@
-from extras.plugins import PluginConfig
+from nautobot.extras.plugins import PluginConfig
 
 
 class PhoneBoxConfig(PluginConfig):
@@ -9,11 +9,12 @@ class PhoneBoxConfig(PluginConfig):
     author = 'Igor Korotchenkov'
     author_email = 'iDebugAll@gmail.com'
     base_url = 'phonebox'
-    min_version = "2.11.0"
+    min_version = "v1.5.0"
     required_settings = []
     default_settings = {}
     caching_config = {
         '*': None
     }
+
 
 config = PhoneBoxConfig

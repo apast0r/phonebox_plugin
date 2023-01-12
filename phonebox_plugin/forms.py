@@ -1,13 +1,13 @@
 from django import forms
-from utilities.forms import (
-    BootstrapMixin, DynamicModelMultipleChoiceField, DynamicModelChoiceField,
+from nautobot.utilities.forms import (
+    DynamicModelMultipleChoiceField, DynamicModelChoiceField,
     TagFilterField, BulkEditForm, CSVModelForm, CSVModelChoiceField
 )
-from tenancy.models import Tenant
-from dcim.models import Region, Site, Device, Interface
-from virtualization.models import VirtualMachine, VMInterface
-from circuits.models import Provider
-from extras.models import Tag
+from nautobot.tenancy.models import Tenant
+from nautobot.dcim.models import Region, Site, Device, Interface
+from nautobot.virtualization.models import VirtualMachine, VMInterface
+from nautobot.circuits.models import Provider
+from nautobot.extras.models import Tag
 from .models import Number, VoiceCircuit
 from .choices import VoiceCircuitTypeChoices
 

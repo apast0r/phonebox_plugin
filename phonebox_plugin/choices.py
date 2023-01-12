@@ -1,4 +1,4 @@
-from utilities.choices import ChoiceSet
+from nautobot.utilities.choices import ChoiceSet
 from django.db.models import Q
 
 

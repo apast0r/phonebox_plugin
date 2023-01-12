@@ -1,20 +1,11 @@
 import django_filters
 from django.db.models import Q
-from circuits.models import Provider
-from dcim.models import Region, Site
-from tenancy.models import Tenant
+from nautobot.circuits.models import Provider
+from nautobot.dcim.models import Region, Site
+from nautobot.tenancy.models import Tenant
 from .models import Number, VoiceCircuit
-from packaging import version
-from django.conf import settings
-
-NETBOX_CURRENT_VERSION = version.parse(settings.VERSION)
-
-if NETBOX_CURRENT_VERSION < version.parse("2.11.3"):
-    from utilities.filters import BaseFilterSet
-    from utilities.filters import TagFilter
-else:
-    from netbox.filtersets import BaseFilterSet
-    from extras.filters import TagFilter
+from nautobot.utilities.filters import BaseFilterSet
+from nautobot.utilities.filters import TagFilter
 
 
 class NumberFilterSet(BaseFilterSet):
